@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous">
+</head>
+<body>
+<form>
+    <div class="container">
+        <div class="mb-3">
+            <label class="form-label">Imie: </label>
+            <input type="text" class="form-control" id="imie" placeholder="Podaj imie">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nazwisko: </label>
+            <input type="text" class="form-control" id="nazwisko" placeholder="Podaj nazwisko">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">E-mail: </label>
+            <input type="email" class="form-control" id="email" placeholder="Podaj email">
+        </div>
+
+        <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Płeć</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                           checked>
+                    <label class="form-check-label" for="gridRadios1">
+                        Meżczyzna
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                        Kobieta
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Opis</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Wiek: </label>
+            <input type="number" class="form-control" id="wiek" placeholder="Podaj wiek">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="specificSizeSelect">Stan cywilny</label>
+            <select class="form-select" id="specificSizeSelect">
+                <option value="1">Panna/Kawaler</option>
+                <option value="2">Wdowa/Wdowiec</option>
+                <option value="3">Zamężna/Mąż</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Wyczyść</button>
+
+        <button type="submit" class="btn btn-primary">Wyślij</button>
+
+    </div>
+</form>
+</body>
+</html>
