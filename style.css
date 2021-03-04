@@ -1,3 +1,8 @@
 body{
     background-color: darkgray;
 }
+
+.img{
+    width: 100px;
+    height: auto;
+}
